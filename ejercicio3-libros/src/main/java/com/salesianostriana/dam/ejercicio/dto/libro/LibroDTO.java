@@ -11,13 +11,6 @@ public record LibroDTO(
         Integer anioPublicacion
 ) {
 
-    /**
-     * Transforma un Libro en un LibroDTO de forma segura:
-     * - Libro null -> devuelve null.
-     * - Libro sin autor -> el campo autor del DTO es null.
-     * - Partes del nombre sin informar (p. ej. apellido2) -> se omiten,
-     *   sin dejar espacios sobrantes ni el texto "null".
-     */
     public static LibroDTO of(Libro libro) {
         if (libro == null) {
             return null;

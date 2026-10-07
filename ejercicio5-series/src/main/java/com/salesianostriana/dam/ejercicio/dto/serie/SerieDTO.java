@@ -13,13 +13,6 @@ public record SerieDTO(
         String imagenPrincipal
 ) {
 
-    /**
-     * Transforma una Serie en un SerieDTO de forma segura:
-     * - Serie null -> devuelve null.
-     * - Sin creador -> creador = null.
-     * - Sin categoría -> categoria = null.
-     * - Lista de imágenes null o vacía -> imagenPrincipal = null.
-     */
     public static SerieDTO of(Serie serie) {
         if (serie == null) {
             return null;

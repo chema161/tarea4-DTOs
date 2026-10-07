@@ -4,17 +4,17 @@
 ### GET todos los libros
 GET http://localhost:8080/api/libro
 
-### GET libro id 1 (con autor completo)
+### GET libro con autor completo
 GET http://localhost:8080/api/libro/1
 
-### GET libro id 2 (autor sin segundo apellido)
+### GET libro con autor sin segundo apellido
 GET http://localhost:8080/api/libro/2
 
-### GET libro id 3 (sin autor)
+### GET libro sin autor
 GET http://localhost:8080/api/libro/3
 
-### GET libro id 4 (autor sin nombre y segundo apellido en blanco)
+### GET libro con autor sin nombre y segundo apellido en blanco
 GET http://localhost:8080/api/libro/4
 
-### GET libro que no existe (404)
+### GET libro que no existe 
 GET http://localhost:8080/api/libro/99

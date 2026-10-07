@@ -4,20 +4,20 @@
 ### GET todas las reservas
 GET http://localhost:8080/api/reserva
 
-### GET reserva id 1 (completa)
+### GET reserva completa
 GET http://localhost:8080/api/reserva/1
 
-### GET reserva id 2 (sin cliente)
+### GET reserva sin cliente
 GET http://localhost:8080/api/reserva/2
 
-### GET reserva id 3 (sin habitación)
+### GET reserva sin habitación
 GET http://localhost:8080/api/reserva/3
 
-### GET reserva id 4 (sin número de noches)
+### GET reserva sin número de noches
 GET http://localhost:8080/api/reserva/4
 
-### GET reserva id 5 (habitación sin precio por noche)
+### GET reserva de habitación sin precio por noche
 GET http://localhost:8080/api/reserva/5
 
-### GET reserva que no existe (404)
+### GET reserva que no existe 
 GET http://localhost:8080/api/reserva/99

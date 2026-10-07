@@ -14,12 +14,10 @@ public final class EjemplosLibro {
                 .id(1L).nombre("Gabriel").apellido1("García").apellido2("Márquez")
                 .nacionalidad("Colombiana").build();
 
-        // Sin segundo apellido
         Autor orwell = Autor.builder()
                 .id(2L).nombre("George").apellido1("Orwell")
                 .nacionalidad("Británica").build();
 
-        // Sin nombre y con segundo apellido en blanco
         Autor incompleto = Autor.builder()
                 .id(3L).apellido1("Anónimo").apellido2("   ")
                 .nacionalidad("Desconocida").build();
@@ -29,7 +27,7 @@ public final class EjemplosLibro {
                         .anioPublicacion(1967).numeroPaginas(471).autor(garciaMarquez).build(),
                 Libro.builder().id(2L).titulo("1984").isbn("978-0451524935")
                         .anioPublicacion(1949).numeroPaginas(328).autor(orwell).build(),
-                // Sin autor
+
                 Libro.builder().id(3L).titulo("Libro sin autor").isbn("978-0000000000")
                         .anioPublicacion(2020).numeroPaginas(100).build(),
                 Libro.builder().id(4L).titulo("Autor incompleto").isbn("978-1111111111")

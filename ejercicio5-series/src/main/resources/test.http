@@ -4,17 +4,17 @@
 ### GET todas las series
 GET http://localhost:8080/api/serie
 
-### GET serie id 1 (completa)
+### GET serie completa
 GET http://localhost:8080/api/serie/1
 
-### GET serie id 2 (sin categoría)
+### GET serie sin categoría
 GET http://localhost:8080/api/serie/2
 
-### GET serie id 3 (lista de imágenes null)
+### GET serie con lista de imágenes null
 GET http://localhost:8080/api/serie/3
 
-### GET serie id 4 (sin creador y lista de imágenes vacía)
+### GET serie sin creador y lista de imágenes vacía
 GET http://localhost:8080/api/serie/4
 
-### GET serie que no existe (404)
+### GET serie que no existe 
 GET http://localhost:8080/api/serie/99
